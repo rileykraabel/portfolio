@@ -1,0 +1,22 @@
+#nav-banner {
+    font-size: 125%;
+    box-shadow: 0 0 5px purple;
+    padding: 12px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#nav-banner > a {
+    color: violet;
+
+    font-weight: normal;
+    text-decoration: none;
+
+    margin-right: 1rem;
+}
+
+#nav-banner > span {
+    font-weight: bold;
+    margin-right: 50rem;
+}
