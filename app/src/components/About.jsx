@@ -1,11 +1,12 @@
 import NavBar from './NavBar.jsx';
 
 function About() {
-    return (
-        <>
-            <NavBar />
-        </>
-    );
+  return (
+    <>
+      <NavBar />
+      <h1>About Me</h1>
+    </>
+  );
 }
 
 export default About

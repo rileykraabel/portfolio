@@ -1,11 +1,13 @@
+import { QueryClient, QueryClientProvider } from 'react-query';
 import { BrowserRouter, Navigate, Routes, Route } from 'react-router-dom';
 
 import About from './components/About.jsx';
 import Contact from './components/Contact.jsx';
 import Experience from './components/Experience.jsx';
-import NavBar from './components/NavBar.jsx';
 import Projects from './components/Projects.jsx';
 import './App.css'
+
+const queryClient = new QueryClient();
 
 function Error() {
   return (
@@ -18,7 +20,7 @@ function Error() {
 
 function App() {
   return (
-    <>
+    <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Routes>
           {/* valid pages */}
@@ -32,7 +34,7 @@ function App() {
           <Route path="*" element={<Navigate to="/error" />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </QueryClientProvider>
   );
 }
 
