@@ -24,14 +24,14 @@ function App() {
       <BrowserRouter>
         <Routes>
           {/* valid pages */}
-          <Route path="portfolio/" element={<About />} />
-          <Route path="portfolio/contact" element={<Contact />} />
-          <Route path="portfolio/experience" element={<Experience />} />
-          <Route path="portfolio/projects" element={<Projects />} />
+          <Route path="/" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/projects" element={<Projects />} />
 
           {/* error handling */}
-          <Route path="portfolio/error" element={<Error />} />
-          {/* <Route path="portfolio/*" element={<Navigate to="/error" />} /> */}
+          <Route path="/error" element={<Error />} />
+          <Route path="/*" element={<Navigate to="/error" />} />
         </Routes>
       </BrowserRouter>
     </QueryClientProvider>
