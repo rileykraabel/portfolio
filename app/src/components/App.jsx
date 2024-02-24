@@ -2,10 +2,10 @@ import React from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { BrowserRouter, Navigate, Routes, Route } from 'react-router-dom';
 
-import About from './components/About.jsx';
-import Contact from './components/Contact.jsx';
-import Experience from './components/Experience.jsx';
-import Projects from './components/Projects.jsx';
+import About from './About.jsx';
+import Contact from './Contact.jsx';
+import Experience from './Experience.jsx';
+import Projects from './Projects.jsx';
 import './App.css'
 
 const queryClient = new QueryClient();
@@ -25,14 +25,14 @@ function App() {
       <BrowserRouter>
         <Routes>
           {/* valid pages */}
-          <Route path="/" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/portfolio/" element={<About />} />
+          <Route path="/portfolio/contact" element={<Contact />} />
+          <Route path="/portfolio/experience" element={<Experience />} />
+          <Route path="/portfolio/projects" element={<Projects />} />
 
           {/* error handling */}
-          <Route path="/error" element={<Error />} />
-          <Route path="/*" element={<Navigate to="/error" />} />
+          <Route path="/portfolio/error" element={<Error />} />
+          <Route path="/portfolio/*" element={<Navigate to="/portfolio/error" />} />
         </Routes>
       </BrowserRouter>
     </QueryClientProvider>

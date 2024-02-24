@@ -1,10 +1,16 @@
 import NavBar from './NavBar.jsx';
+import './Projects.css';
 
 function Projects() {
   return (
     <>
       <NavBar />
-      <h1>My Projects</h1>
+      <div className="projects-page">
+        <h2>My Projects</h2>
+        <div className="project-info">
+          <p>Project 1</p>
+        </div>
+      </div>
     </>
   );
 }

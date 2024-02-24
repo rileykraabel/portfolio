@@ -1,10 +1,16 @@
 import NavBar from './NavBar.jsx';
+import './Contact.css';
 
 function Contact() {
   return (
     <>
       <NavBar />
-      <h1>Contact Me:</h1>
+      <div className="contact-page">
+        <h2>Contact Me:</h2>
+        <div className="contact-info">
+          <p>Email: rileykraabel@gmail.com</p>
+        </div>
+      </div>
     </>
   );
 }

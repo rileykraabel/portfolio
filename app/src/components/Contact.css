@@ -1,0 +1,14 @@
+.contact-page {
+    margin: 0 20px;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
